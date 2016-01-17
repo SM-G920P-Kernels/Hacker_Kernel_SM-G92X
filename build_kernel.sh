@@ -3,7 +3,7 @@
 
 KERNEL_DIR=$(pwd)
 BUILD_USER="$USER"
-TOOLCHAIN_DIR=/home/$BUILD_USER/android/toolchains
+TOOLCHAIN_DIR=/home/$BUILD_USER/toolchains
 BUILD_JOB_NUMBER=`grep processor /proc/cpuinfo|wc -l`
 BUILD_WHERE=$(pwd)
 BUILD_KERNEL_DIR=$BUILD_WHERE
@@ -34,22 +34,9 @@ HACKER_VER="$BASE_VER$DEVICE_VER$VER"
 
 
 BUILD_KERNEL()
-{	
-	echo ""
-	echo "=============================================="
-	echo "START: MAKE CLEAN"
-	echo "=============================================="
-	echo ""
-	
-
-	make clean
+{
+	./build_clean.sh
 	find . -name "*.dtb" -exec rm {} \;
-
-	echo ""
-	echo "=============================================="
-	echo "END: MAKE CLEAN"
-	echo "=============================================="
-	echo ""
 
 	echo ""
 	echo "=============================================="
@@ -63,7 +50,8 @@ BUILD_KERNEL()
         export SUBARCH=arm64
 	export KBUILD_BUILD_USER=thehacker911
 	export KBUILD_BUILD_HOST=smartlounge.eu
-        #export USE_CCACHE=1
+        export USE_CCACHE=1
+        export CCACHE_DIR=/media/Cache/kernel_ccache
         export USE_SEC_FIPS_MODE=true
         export ENABLE_GRAPHITE=true
 	export CROSS_COMPILE=$BUILD_CROSS_COMPILE

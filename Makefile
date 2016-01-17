@@ -5,7 +5,7 @@ EXTRAVERSION =
 NAME = TOSSUG Baby Fish
 
 #TOOLCHAIN_DIR = $(CURDIR)/toolchain/aarch64-linux-gnu-5.3/bin/aarch64-
-TOOLCHAIN_DIR = /home/kerneldev/android/toolchains/aarch64-linux-gnu-5.3/bin/aarch64-
+TOOLCHAIN_DIR = /home/buildserver/toolchains/aarch64-linux-gnu-5.3/bin/aarch64-
 
 # *DOCUMENTATION*
 # To see a list of typical targets execute "make help"
