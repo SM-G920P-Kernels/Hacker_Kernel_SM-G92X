@@ -5,7 +5,7 @@ By installing this kernel, you take full responsability of it's use, I (thehacke
 
 <@center><b><#selectbg_g>READ THIS BEFORE GOING FURTHER</#>
 <@left>
-Do not flash this package if you have a Sprint or Rogers device
+Only for SM-G920P!!!
 
 <@center><#selectbg_g>http://smartlounge.eu</#></b>
 <@left>

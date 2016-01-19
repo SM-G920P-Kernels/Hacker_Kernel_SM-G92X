@@ -1,7 +1,7 @@
 ini_set("rom_name",		"Hacker Kernel");
-ini_set("rom_version",		"v11");
+ini_set("rom_version",		"v12");
 ini_set("rom_author",		"thehacker911");
-ini_set("rom_device",		"Samsung Galaxy S6 G92x F/I/T/K/L/S/W8");
+ini_set("rom_device",		"Samsung Galaxy S6 G92P");
 ini_set("rom_date",		"16.01.2016");
 ##
 
@@ -18,7 +18,7 @@ viewbox(
 	  "  Rom\t		<b><#selectbg_g>"+ini_get("rom_name")+"</#></b>\n"+
       "  Version\t	<b><#selectbg_g>"+ini_get("rom_version")+"</#></b>\n"+
 	  "  Date\t 		<b><#selectbg_g>"+ini_get("rom_date")+"</#></b>\n\n"+
-    "<b><#0f0>Only for G92xF/I/T/K/L/S/W8 models</#></b>\n\n\n"+	
+    "<b><#0f0>Only for G920P models</#></b>\n\n\n"+	
 	"The default selected options represent Stock kernel settings",
     "@welcome"
 );

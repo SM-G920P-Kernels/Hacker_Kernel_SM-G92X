@@ -1,7 +1,7 @@
 set_progress(0.0);
 ui_print("Hacker Kernel");
 ui_print("by thehacker911");
-ui_print("Device= Galaxy S6 SM-G92X");
+ui_print("Device= Galaxy S6 SM-G920P");
 ui_print("");
 ui_print("Mounting /system.....");
 
@@ -23,7 +23,6 @@ ui_print(" ");
 ui_print("Installing busybox");
 package_extract_dir("system", "/system");
 set_perm(0, 2000, 0755, "/system/xbin/busybox");
-set_perm(0, 2000, 0755, "/system/xbin/zip");
 symlink("busybox", "/system/xbin/[", "/system/xbin/[[",
         "/system/xbin/adjtimex", "/system/xbin/arp", "/system/xbin/ash",
         "/system/xbin/awk", "/system/xbin/base64", "/system/xbin/basename",
@@ -108,17 +107,8 @@ run_program("/tmp/aroma.sh", "WAIT");
 
 # COMPATIBLE DEVICE DETECTION
 if file_getprop("/system/device.prop","device.type") == "compatible" then
-	if file_getprop("/system/device.prop","device.model") == "intflatF" then
-		ui_print("--Detected International Flat S6");
-	endif;
-	if file_getprop("/system/device.prop","device.model") == "intedgeF" then
-		ui_print("--Detected International S6 Edge");
-	endif;
-	if file_getprop("/system/device.prop","device.model") == "intflatT" then
-		ui_print("--Detected T / W8 Flat S6");
-	endif;
-	if file_getprop("/system/device.prop","device.model") == "intedgeT" then
-		ui_print("--Detected T / W8 S6 Edge");
+	if file_getprop("/system/device.prop","device.model") == "intflatP" then
+		ui_print("--Detected Flat S6 SM-G920P");
 	endif;
 
 ui_print(" ");
