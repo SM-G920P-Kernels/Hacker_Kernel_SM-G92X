@@ -4,6 +4,8 @@
 # This is a common source of Android security bugs.
 #
 
+# service should be overwritten for SPRINT's requirement
+# So, rilcarrier is imported after common rc, like init.rilchip.rc
 import /init.rilchip.rc
 import /init.rilcarrier.rc
 import /init.rilepdg.rc
