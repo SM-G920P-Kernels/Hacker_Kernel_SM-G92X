@@ -1,19 +1,19 @@
 #Name
 Hacker
 #Device
--S6-Universal
+-SM-G920P
 #Version
--V11
+-V12
 #Zip-Name
 hacker-kernel
 #Version
--V11-WSM
+-V12-WSM
 #Toolchain
 aarch64-linux-gnu-5.3/bin/aarch64-
 #Su Version
 -su_266
 #Device
--S6-Userbuild
+-SM-G920P-Userbuild
 
 
 #UBERTC-aarch64-linux-android-6.0/bin/aarch64-linux-android-
